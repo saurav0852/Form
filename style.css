@@ -1,0 +1,27 @@
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .error-message,
+  .success-message {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  
+  .success-message {
+    color: green;
+  }
+  
