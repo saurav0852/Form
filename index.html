@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style5.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registration Form</h1>
+      <form id="registrationForm">
+        <div class="form-group">
+          <label for="fullName">Full Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="fullName"
+            required
+            onchange="validateFullName()"
+          />
+          <p id="fullNameError" class="error-message"></p>
+        </div>
+        <div class="form-group">
+          <label for="email">Email ID:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            required
+            onchange="validateEmail()"
+          />
+          <p id="emailError" class="error-message"></p>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            required
+            onchange="validatePhoneNumber()"
+          />
+          <p id="phoneError" class="error-message"></p>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            required
+            onchange="validatePassword()"
+          />
+          <p id="passwordError" class="error-message"></p>
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input
+            type="password"
+            class="form-control"
+            id="confirmPassword"
+            required
+            onchange="validateConfirmPassword()"
+          />
+          <p id="confirmPasswordError" class="error-message"></p>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <p id="success" class="success-message"></p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
